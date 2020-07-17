@@ -1,0 +1,31 @@
+\documentclass[letterpaper, 12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[t1]{fontenc}
+\usepackage[spanish]{babel}
+
+
+\title{Hilos}
+\author{Raul Daza Liñan}
+\date{July 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+En la computación se trabaja para que los procesadores puedan llevar acabo las tareas de forma más rápida, para esto se han planteado ideas como realizar distintas tareas al mismo tiempo, a estas tareas distintas se le llaman procesos. Dentro de los procesos puede haber subprocesos los cuales son aún más sencillos, si estos se pueden desarrollar con relativa independencia o son repetitivos existe esta posibilidad que estos subprocesos se pueden llevar acabo al mismo tiempo. Cuando un subproceso es repetitivo o independiente estos se pueden llevar acabo por hilos, en vez de crear otro proceso lo que hace el sistema operativo es dividir estas ‘mini´ tareas por hilos ya no tiene sentido crear otro proceso del mismo tipo.
+\section{Hilos}
+\subsection{Definicion}
+Los hilos son subprocesos dentro de un proceso que pueden llevarse a cabo al mismo tiempo, estas tareas son aún más sencillas que los procesos, estos ayudan a agilizar el trabajo debido a que dentro de los procesos no se realiza una tarea a la vez sino múltiples tareas, al dividir el trabajo y realizarlo al mismo tiempo se reduce el tiempo, aumentando así la eficiencia. Si en un proceso no puede realizar mas de una tarea a la vez se dice que es de único-hilo, en cambio, si un proceso realizar varias tareas a la vez se dice que es multihilo. Cuando un proceso es multihilo, los hilos comparten información haciendo que la realización de la tarea sea más eficaz, los hilos comparten sección de código, datos y recursos.
+Los hilos se pueden implementar de dos formas: una implementación hecha por el usuario o una implementación hecha por el sistema operativo.
+\subsection{Tipos de hilos}
+La implementación hecha por el usuario es hecha por una aplicación de forma separada al sistema operativo, por lo tanto, este no es consciente a los hilos creados por el usuario. Este tipo de hilos se realizan mediante librerías.
+La implementación hecha por el sistema operativo como lo dice su nombre es hecha por el sistema operativo, siendo mas especifico por su núcleo/kernel.
+\subsection{Ventajas y desventajas}
+Cada uno tiene su ventaja y desventaja, la implementación por el usuario permite crear hilos incluso si el kernel no usa hilos de manera nativa, pero estos pueden bloquear al resto de hilos cuando llaman al sistema. Los hilos hechos por el sistema operativo usan de mejor manera los recursos de las diferentes arquitecturas de los procesadores.
+\begin{thebibliography}{0}
+\bibitem{Hilo} mvd. " Hilos ". Url: https://www.fing.edu.uy/tecnoinf/mvd/cursos/so/material/teo/so05-hilos.pdf
+\bibitem{procesos} uva. "Unidad dos: gestion de procesos ". Url: https://www2.infor.uva.es/~fjgonzalez/apuntes/Tema4.pdf
+\bibitem{procesos} uc3m, Jesús Carretero Pérez,Alejandro Calderón Mateos,José Daniel García Sánchez,Francisco Javier García Blas,José Manuel Pérez Lobato,María Gregoria Casares Andrés . "sistemas opetativos". Url: http://ocw.uc3m.es/ingenieria-informatica/sistemas-operativos/material-de-clase-1/mt_t2_l5.pdf
+\end{thebibliography}
+\end{document}
